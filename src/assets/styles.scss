@@ -1,0 +1,42 @@
+// style.scss
+[data-theme="light"] {
+    --bg-color1: #D0DFFF;
+}
+
+[data-theme="dark"] {
+    --bg-color1: #ffffff;
+}
+
+body {
+    background: var(--bg-color1);
+    color: rgb(0, 0, 0);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.header {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.footer {
+    color: #18a058;
+    font-size: 10px;
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+}
+
+.body {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.inside {
+    width: 200px;
+    text-align: center;
+}
